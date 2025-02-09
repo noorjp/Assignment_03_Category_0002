@@ -1,11 +1,143 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="cupcake">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nature's Platter</title>
+    <!-- font sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+
+     <!-- tailwind css and daisyui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5.0.0-beta.7/themes.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/f4bf7d0fb5.js" crossorigin="anonymous"></script>
+    <!-- styles -->
+     <style>
+        .font-sora {
+            font-family: "Sora", serif;
+        }
+      @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .animate-fade-in {
+      animation: fadeIn 2s ease-in-out;
+  }
+     </style>
+
 </head>
-<body>
-    
+<body class="font-sora">
+    <!-- header -->
+    <header class="md:container max-w-screen-xl mx-auto pt-2 md:px-16 lg:px-28  bg-gradient-to-t from-[#EFEBE3] ... ">
+        <nav>
+            <div class="navbar">
+                <div class="flex-1">
+                    <div>
+                      <img class="max-w-full md:h-10" src="assets/logo-header.png" alt="Logo">
+                    </div>
+                </div>
+                <div class="flex-auto justify-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="space-x-3">
+                  <i class="fas fa-search h-2"></i>
+                  <i class="fa-solid fa-cart-shopping h-2"></i>
+                  <a class=" px-7 py-2 bg-transparent text-Text border border-Accent rounded-md" href="#">Login</a>
+                  <a class="py-2 px-7  bg-[#179800] text-white rounded-md" href="#">Register</a>
+                </div>
+                <div class="flex-none lg:hidden  ">
+                  <button class="btn btn-square btn-ghost">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      class="inline-block h-5 w-5 stroke-current">
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        stroke-width="2"
+                        d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+        </nav>
+               <!-- text -->
+         <div>
+          <h3 class="md:text-5xl text-3xl font-semibold text-center text-Text mt-9 md:mt-20 animate-fade-in">Freshness <span class="text-green-700">You Can <br>
+            Count</span> On, Prices You’ll Love!</h3>
+          <p class="text-center text-xl font-normal text-[#111111] pt-8 pb-9">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+          <img class="w-full items-center" src="assets/hero-vegetables.png" alt="">
+         </div>
+    </header>
+
+    <!-- main section -->
+<main class="max-w-screen-xl mx-auto pt-2 px-4 md:px-16 lg:px-28">
+    <!-- Services -->
+     <section class="mb-20">
+      <h4 class="text-[#179800] text-4xl font-semibold mt-10 mb-7 md:mt-28 md:mb-12">Services</h4>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 ">
+
+        <!-- Card 1 -->
+        <div class="card bg-[#EFEBE3]  rounded-lg p-6 text-center">
+          <figure class="px-10 pt-10">
+            <img src="assets/service.png" alt="Service" class="bg-white rounded-full h-24 w-24 object-contain p-3">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">24/7 Services</h2>
+            <p class="text-gray-700 text-sm">
+              Reliable 24/7 service for seamless support anytime, anywhere. </p>
+          </div>
+        </div>
+      
+        <!-- Card 2 -->
+        <div class="card bg-[#EFEBE3] rounded-lg p-6 text-center">
+          <figure class="px-10 pt-10">
+            <img src="assets/delivery.png" alt="Fast Delivery" class="bg-white rounded-full h-24 w-24 p-3 object-contain">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Fast Delivery</h2>
+            <p class="text-gray-700 text-sm">
+              Get your orders delivered quickly with our fast delivery service.
+            </p>
+          </div>
+        </div>
+      
+        <!-- Card 3 -->
+        <div class="card bg-[#EFEBE3]  rounded-lg p-6 text-center">
+          <figure class="px-10 pt-10">
+            <img src="assets/healthy.png" alt="Healthy Products" class="bg-white rounded-full h-24 w-24 p-3 object-contain">
+          </figure>
+          <div class="card-body items-center text-center">
+            <h2 class="card-title font-bold">Healthy Products</h2>
+            <p class="text-gray-700 text-sm">
+              Pure, natural, and healthy products for a better lifestyle.
+            </p>
+          </div>
+        </div>
+      </div>
+     </section>
+
+     <!-- Popular Products -->
+
+     <section class="mb-20 bg-[#EFEBE3]">
+      <h4 class="text-[#179800] text-4xl font-semibold mt-10 mb-7 md:pt-28 md:pb-12">Popular Products</h4>
+
+
+     </section>
+
+</main>
+
+<!-- footer section -->
+ <footer>
+
+ </footer>
 </body>
 </html>
